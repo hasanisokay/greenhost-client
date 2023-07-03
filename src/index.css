@@ -8,9 +8,12 @@
 }
 
 .active{
-    @apply tracking-wide transition-colors duration-300 bg-[#fad932] text-black bg-opacity-80
+    @apply text-red-500 bg-inherit p-0 m-0 font-medium
   }
   
 .default{
-    @apply tracking-wide transition-colors duration-200 bg-inherit
+    @apply text-white bg-inherit m-0 p-0 font-medium
   }
+.section-title{
+  @apply font-bold md:text-4xl text-2xl text-black
+}

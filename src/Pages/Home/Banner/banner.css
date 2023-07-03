@@ -1,0 +1,8 @@
+.banner{
+    background-image: url("../../../assets/img/bg-bottom-hero.png");
+        background-color: #7ebc12;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+        /* background-blend-mode: color; */
+}

@@ -33,49 +33,9 @@ import Payment from '../Pages/Payment/Payment';
             element: <Home></Home>
         },
         {
-          path: "login",
-          element: <Login></Login>
-        },
-        {
-          path: "signup",
-          element: <SignUp></SignUp>
-        },
-        {
-          path: "dashboard/admin",
-          element: <AdminRoute><AdminDashboard></AdminDashboard></AdminRoute>
-        },
-        {
-          path: "dashboard/instructor",
-          element: <InstractorRoute><InstructorDashboard></InstructorDashboard></InstractorRoute>
-        },
-        {
-          path: "dashboard/student",
-          element: <PrivateRoute><StudentDashboard></StudentDashboard></PrivateRoute>
-        },
-        {
-          path:"dashboard/payment",
-          element: <PrivateRoute><Payment></Payment></PrivateRoute>
-        },
-        {
-          path: "classes",
-          element: <Classes></Classes>
-        },
-        {
-          path: "instructors",
-          element: <Instructors></Instructors>
-        },
-        {
-          path: "profile",
-          element: <Profile></Profile>
-        },
-        {
-          path: "instructor/:id",
-          element: <SingleInstructor></SingleInstructor>,
-        },
-        {
           path:"about",
           element: <AboutUs></AboutUs>
-        }
+        },
       ]
     },
   ]);
