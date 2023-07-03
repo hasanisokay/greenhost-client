@@ -12,6 +12,7 @@ import { useContext } from 'react';
 import Domain from '../Domain/Domain';
 import Welcome from '../Welcome/Welcome';
 import HostingPlans from '../HostingPlans/HostingPlans';
+import SharedVsDedicated from '../SharedVsDedicated/SharedVsDedicated';
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
             <Domain></Domain>
             <Welcome></Welcome>
             <HostingPlans></HostingPlans>
+            <SharedVsDedicated></SharedVsDedicated>
             {/* 
             <TypewriterText></TypewriterText>
             <PopularClasses></PopularClasses>

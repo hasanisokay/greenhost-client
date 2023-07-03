@@ -1,15 +1,13 @@
 import React from 'react';
-import { FaBars, FaCheck, FaCog, FaShareAlt } from 'react-icons/fa';
+import { FaBars, FaCheck, FaCog, FaServer, FaShareAlt } from 'react-icons/fa';
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 
 const HostingPlans = () => {
+    const description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sint dolorem, debitis cum iure aliquam quia earum nam sapiente beatae pariatur excepturi delectus? Quia libero ab fuga reprehenderit impedit delectus?"
     return (
         <div className='mx-10 my-4'>
 
-            <h3 className='section-title text-center'>Our Hosting Plans</h3>
-            <p className='md:w-[60%] mx-auto mt-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ullam rem dolorum placeat nesciunt, incidunt officia nostrum quis quisquam quasi quas commodi ipsa maiores expedita, unde, voluptatem nisi alias nam.</p>
-            <hr className='w-20 border-[.5 px] mt-4 border-black mx-auto  ' />
-            <hr className='w-32 border-[.5 px] my-1 border-[#7ebc12] mx-auto  ' />
-            <hr className='w-20 border-[.5 px] border-black mx-auto mb-10 ' />
+            <SectionTitle title={"Our Hosting Plan"} description={description}/>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 <div className='border-t-[#7ebc12] border-t-8 rounded-t-lg flex flex-col items-center relative rounded-b-lg pt-4 pb-2 shadow-2xl'>
                     <div className='bg-[#7ebc12] rounded-full border-0 h-12 w-12 absolute -top-7 justify'>
@@ -52,7 +50,7 @@ const HostingPlans = () => {
                 </div>
                 <div className='border-t-[#ff0f10] border-t-8 rounded-t-lg flex flex-col items-center relative rounded-b-lg pt-4 pb-2 shadow-2xl'>
                     <div className='bg-[#ff0f10] rounded-full border-0 h-12 w-12 absolute -top-7 justify'>
-                        <FaBars className=' text-white h-full w-full p-2' />
+                        <FaServer className=' text-white h-full w-full p-2' />
                     </div>
                     <div>
                         <div className='text-center pt-4 px-4'>
