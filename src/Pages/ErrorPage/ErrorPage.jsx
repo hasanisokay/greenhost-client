@@ -8,7 +8,7 @@ const ErrorPage = () => {
     return (
         <div className='text-center overflow-hidden'>
               <Helmet>
-                <title>Light & Shadow | Error</title>
+                <title>GreenHost | Error</title>
             </Helmet>
             <Lottie animationData={errorLottieFile} className='w-[500px] mx-auto'/>
             <h1 className='text-red-500 text-xl font-bold'>{status}</h1>

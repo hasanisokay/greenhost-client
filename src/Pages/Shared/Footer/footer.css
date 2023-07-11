@@ -1,0 +1,9 @@
+.footer-div{
+    background-image: url("../../../assets/img/bg-bottom-footer.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: cadetblue;
+    background-color: #7ebc12;
+
+}

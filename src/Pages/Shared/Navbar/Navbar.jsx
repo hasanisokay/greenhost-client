@@ -1,30 +1,23 @@
 import React from 'react';
 import { useContext } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link, useLocation, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../Providers/AuthProvider';
-import { FaChalkboardTeacher, FaGraduationCap, FaHome, FaMoon, FaShoppingCart, FaUserTie } from "react-icons/fa"
-import logo from "../../../assets/logo.png"
-import useInstructor from '../../../Hooks/useInstructor';
-import useAdmin from '../../../Hooks/useAdmin';
-import useThemeSwitch from '../../../Hooks/useThemeSwitch';
-import { useState } from 'react';
+import { FaChalkboardTeacher, FaGraduationCap, FaHome, FaMoon, FaSearch, FaShoppingCart, FaUserTie } from "react-icons/fa"
+
+
 
 const Navbar = () => {
 
     // const [handleThemeSwitch] = useThemeSwitch()
     const { navBg, setNavBg } = useContext(AuthContext)
-    const { pathname } = useLocation()
-    const [isAdmin, isAdminLoading] = useAdmin()
-    const [isInstructor, isInstructorLoading] = useInstructor()
-
-
+    const {pathname} = useLocation()
     const navOptions = <>
-        <li ><NavLink className="hover:text-red-500" to={"/"}>Home</NavLink></li>
-        <li ><NavLink className="hover:text-red-500 " to={"/about"} >About</NavLink></li>
-        <li ><NavLink className="hover:text-red-500 " to={"/domain"}  >Domain</NavLink></li>
-        <li ><NavLink className="hover:text-red-500 " to={"/hosting"} >Hosting</NavLink></li>
-        <li ><NavLink className="hover:text-red-500 " to={"/pages"} >Pages</NavLink></li>
-        <li ><NavLink className="hover:text-red-500 " to={"contact"} >Contact</NavLink></li>
+        <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"/"}>Home</NavLink></li>
+        <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"/about"} >About</NavLink></li>
+        <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"/domain"}  >Domain</NavLink></li>
+        <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"/hosting"} >Hosting</NavLink></li>
+        {/* <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"/pages"} >Pages</NavLink></li> */}
+        {/* <li ><NavLink className={`hover:text-red-500 ${pathname !=="/" && "text-black" } `} to={"contact"} >Contact</NavLink></li> */}
     </>
     return (
         <>
@@ -46,7 +39,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <FaSearch className='text-[#ff0f10] mr-4 border-0'></FaSearch>
+                    <a className="p-2 rounded-xl bg-[#ff0f10] text-white">Register</a>
                 </div>
             </div>
         </>

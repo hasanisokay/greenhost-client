@@ -2,12 +2,12 @@ import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../Pages/Shared/Footer/Footer';
 import Navbar from '../Pages/Shared/Navbar/Navbar';
-import useAuth from '../Hooks/useAuth';
+
 import { AuthContext } from '../Providers/AuthProvider';
 import { useContext } from 'react';
 
 const Main = () => {
-    const {themeSwitch} =useAuth()
+
     const location = useLocation()
     const { setNavBg } = useContext(AuthContext);
     window.addEventListener('scroll', function() {

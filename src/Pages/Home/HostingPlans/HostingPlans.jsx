@@ -5,7 +5,7 @@ import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 const HostingPlans = () => {
     const description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos sint dolorem, debitis cum iure aliquam quia earum nam sapiente beatae pariatur excepturi delectus? Quia libero ab fuga reprehenderit impedit delectus?"
     return (
-        <div className='mx-10 my-4'>
+        <div className='mx-10 pt-20'>
 
             <SectionTitle title={"Our Hosting Plan"} description={description}/>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>

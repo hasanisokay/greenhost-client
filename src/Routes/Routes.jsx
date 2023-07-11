@@ -5,21 +5,13 @@ import {
 } from "react-router-dom";
 import Main from '../Layout/Main';
 import Home from '../Pages/Home/Home/Home';
-import Login from '../Pages/Login/Login';
-import SignUp from '../Pages/SignUp/SignUp';
-import Classes from '../Pages/Classes/Classes';
-import Instructors from '../Pages/Instructors/Instructors';
+
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
-import Profile from '../Pages/Profile/Profile';
-import SingleInstructor from '../Pages/Instructors/SingleInstructor';
-import AdminRoute from './AdminRoute';
-import AdminDashboard from '../Dashboards/AdminDashboard';
-import InstractorRoute from './InstractorRoute';
-import InstructorDashboard from '../Dashboards/InstructorDashboard';
-import PrivateRoute from './PrivateRoute';
-import StudentDashboard from '../Dashboards/StudentDashboard';
+
 import AboutUs from '../Pages/AboutUs/AboutUs';
-import Payment from '../Pages/Payment/Payment';
+import Domain from '../Pages/Home/Domain/Domain';
+import HostingPlans from '../Pages/Home/HostingPlans/HostingPlans';
+
 
 
   export const router = createBrowserRouter([
@@ -36,6 +28,14 @@ import Payment from '../Pages/Payment/Payment';
           path:"about",
           element: <AboutUs></AboutUs>
         },
+        {
+          path: "domain",
+          element: <Domain></Domain>
+        },
+        {
+          path:"hosting",
+          element: <HostingPlans></HostingPlans>
+        }
       ]
     },
   ]);

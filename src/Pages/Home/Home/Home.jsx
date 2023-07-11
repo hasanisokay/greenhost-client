@@ -1,37 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from '../Banner/Banner';
 import { Helmet } from 'react-helmet-async';
-import Gallery from '../Gallery/Gallery';
-import PopularClasses from '../PopularClasses/PopularClasses';
-import PopularInstructors from '../PopularInstructors/PopularInstructors';
-import TypewriterText from '../TypeWriter/TypewriterText';
-import Feedback from '../Feedback/Feedback';
-import { useEffect } from 'react';
-import { AuthContext } from '../../../Providers/AuthProvider';
-import { useContext } from 'react';
 import Domain from '../Domain/Domain';
 import Welcome from '../Welcome/Welcome';
 import HostingPlans from '../HostingPlans/HostingPlans';
 import SharedVsDedicated from '../SharedVsDedicated/SharedVsDedicated';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import OurTeam from '../OurTeam/OurTeam';
+import Slider from '../Slider/Slider';
+import Footer from '../../Shared/Footer/Footer';
+// import HomeSlider from '../Slider/HomeSlider';
 
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
         <div>
             <Helmet>
-                <title>Light & Shadow | Home</title>
+                <title>GreenHost | Home</title>
             </Helmet>
             <Banner></Banner>
-            <Domain></Domain>
             <Welcome></Welcome>
-            <HostingPlans></HostingPlans>
-            <SharedVsDedicated></SharedVsDedicated>
-            {/* 
-            <TypewriterText></TypewriterText>
-            <PopularClasses></PopularClasses>
-            <PopularInstructors></PopularInstructors>
-            <Gallery></Gallery>
-            <Feedback></Feedback> */}
+            <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100" >
+                <Domain></Domain>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100" >
+                <HostingPlans></HostingPlans>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100" >
+                <SharedVsDedicated></SharedVsDedicated>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100" >
+                <Slider></Slider>
+            </div>
+            <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100" >
+                <OurTeam></OurTeam>
+            </div>
+
         </div>
     );
 };

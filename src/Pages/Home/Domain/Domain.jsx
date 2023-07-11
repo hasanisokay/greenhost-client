@@ -4,7 +4,7 @@ import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 const Domain = () => {
     const description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, necessitatibus quam nihil quidem eos cum, praesentium reiciendis adipisci ad facere impedit sapiente officia ipsa, tenetur temporibus! Veniam quis nobis facere."
     return (
-        <div className='domain'>
+        <div className='domain pt-20'>
             <SectionTitle title={"Search Your Domain"} description={description} />
             <div className='text-center'>
                 <input type="text" placeholder="search your domain" className="input bg-inherit h-16 input-bordered w-[90%] mx-auto md:w-[800px] relative" />
